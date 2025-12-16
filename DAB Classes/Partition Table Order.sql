@@ -1,0 +1,75 @@
+ALTER DATABASE AdventureWorks ADD FILEGROUP FG_2011;
+ALTER DATABASE AdventureWorks ADD FILEGROUP FG_2012;
+ALTER DATABASE AdventureWorks ADD FILEGROUP FG_2013;
+ALTER DATABASE AdventureWorks ADD FILEGROUP FG_2014;
+ALTER DATABASE AdventureWorks ADD FILEGROUP FG_2015_PLUS;
+
+
+ALTER DATABASE AdventureWorks ADD FILE (
+    NAME = Sales2011,
+    FILENAME = 'D:\SQLData\Sales2011.ndf',
+    SIZE = 500MB,
+    FILEGROWTH = 100MB
+) TO FILEGROUP FG_2011;
+
+ALTER DATABASE AdventureWorks ADD FILE (
+    NAME = Sales2012,
+    FILENAME = 'D:\SQLData\Sales2012.ndf',
+    SIZE = 500MB,
+    FILEGROWTH = 100MB
+) TO FILEGROUP FG_2012;
+
+ALTER DATABASE AdventureWorks ADD FILE (
+    NAME = Sales2013,
+    FILENAME = 'D:\SQLData\Sales2013.ndf',
+    SIZE = 1GB,
+    FILEGROWTH = 200MB
+) TO FILEGROUP FG_2013;
+
+ALTER DATABASE AdventureWorks ADD FILE (
+    NAME = Sales2014,
+    FILENAME = 'D:\SQLData\Sales2014.ndf',
+    SIZE = 1GB,
+    FILEGROWTH = 200MB
+) TO FILEGROUP FG_2014;
+
+ALTER DATABASE AdventureWorks ADD FILE (
+    NAME = Sales2015Plus,
+    FILENAME = 'D:\SQLData\Sales2015Plus.ndf',
+    SIZE = 1GB,
+    FILEGROWTH = 200MB
+) TO FILEGROUP FG_2015_PLUS;
+
+
+
+CREATE PARTITION FUNCTION PF_OrderDate (DATE)
+AS RANGE RIGHT FOR VALUES
+(
+    '2012-01-01',
+    '2013-01-01',
+    '2014-01-01',
+    '2015-01-01'
+);
+
+
+
+
+
+SELECT name
+FROM sys.filegroups;
+
+CREATE PARTITION SCHEME PS_OrderDate
+AS PARTITION PF_OrderDate
+TO (
+    FG_2011,
+    FG_2012,
+    FG_2013,
+    FG_2014,
+    FG_2015_PLUS
+);
+
+
+
+CREATE CLUSTERED INDEX CX_SalesOrderHeader_OrderDate
+ON Sales.SalesOrderHeader (OrderDate)
+ON PS_OrderDate (OrderDate);
