@@ -33,6 +33,18 @@
           <AssociatedConnUserName />
           <FullPath>Partition Table Order.sql</FullPath>
         </FileNode>
+        <FileNode Name="Partition Terminals History Check.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Partition Terminals History Check.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Partition Terminals History Table.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Partition Terminals History Table.sql</FullPath>
+        </FileNode>
         <FileNode Name="Transactional Queries.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>

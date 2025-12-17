@@ -78,3 +78,17 @@ CREATE CLUSTERED INDEX CX_SalesOrderDetail_ModifiedDate
 ON SalesOrderDetail (ModifiedDate, SalesOrderID)
 ON PS_OrderDate (ModifiedDate);
 
+--check partatition
+SELECT
+    ps.name AS partition_scheme,
+    dds.destination_id AS partition_number,
+    fg.name AS filegroup_name
+FROM sys.partition_schemes ps
+JOIN sys.destination_data_spaces dds
+    ON ps.data_space_id = dds.partition_scheme_id
+JOIN sys.filegroups fg
+    ON dds.data_space_id = fg.data_space_id
+WHERE ps.name = 'PS_OrderDate'
+ORDER BY dds.destination_id;
+
+
