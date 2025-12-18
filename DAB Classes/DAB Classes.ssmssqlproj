@@ -21,6 +21,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="Backup With Encryption.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Backup With Encryption.sql</FullPath>
+        </FileNode>
         <FileNode Name="Backup.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
@@ -44,6 +50,12 @@
           <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Partition Terminals History Table.sql</FullPath>
+        </FileNode>
+        <FileNode Name="Restore With Encryption.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>Restore With Encryption.sql</FullPath>
         </FileNode>
         <FileNode Name="Transactional Queries.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
