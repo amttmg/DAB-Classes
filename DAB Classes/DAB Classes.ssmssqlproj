@@ -4,9 +4,23 @@
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="094WK237:094WK237\Administrator">
-          <Created>2025-12-16T07:08:34.3954534+05:45</Created>
+          <Created>2025-12-18T16:02:15.6715038+05:45</Created>
           <Type>SQL</Type>
           <Server>094WK237</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>master</InitialDB>
+          <LoginTimeout>15</LoginTimeout>
+          <TrustServerCertificate>True</TrustServerCertificate>
+          <EncryptionOption>True</EncryptionOption>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+        <ConnectionNode Name="094WK237\SQLEXPRESS:094WK237\Administrator">
+          <Created>2025-12-18T14:26:33.6036361+05:45</Created>
+          <Type>SQL</Type>
+          <Server>094WK237\SQLEXPRESS</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
           <InitialDB />
@@ -28,38 +42,38 @@
           <FullPath>Backup With Encryption.sql</FullPath>
         </FileNode>
         <FileNode Name="Backup.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Backup.sql</FullPath>
         </FileNode>
         <FileNode Name="Partition Table Order.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Partition Table Order.sql</FullPath>
         </FileNode>
         <FileNode Name="Partition Terminals History Check.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Partition Terminals History Check.sql</FullPath>
         </FileNode>
         <FileNode Name="Partition Terminals History Table.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Partition Terminals History Table.sql</FullPath>
         </FileNode>
         <FileNode Name="Restore With Encryption.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Restore With Encryption.sql</FullPath>
         </FileNode>
         <FileNode Name="Transactional Queries.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>094WK237</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:094WK237\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>094WK237\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Transactional Queries.sql</FullPath>
         </FileNode>
