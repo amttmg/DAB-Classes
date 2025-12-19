@@ -1,3 +1,5 @@
+use BankDB;
+
 ;WITH N AS (
     SELECT TOP (10000)
         ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) AS n
